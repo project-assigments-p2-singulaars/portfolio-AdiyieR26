@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    
+   background:  linear-gradient(to left, #c29570 68%, #247e80 68%);  
+   margin: 10px;
+   padding: 10px;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 18px;
+   position: relative;
+}
+
+/*HEADER*/
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 10vh;
+}
+
+.header .logo{
+    cursor: pointer;
+    margin-right: auto ;
+}
+
+.header .logo img{
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+    width: 100;
+    padding-left: 90%;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+
+.nav-links{
+    list-style: none;
+    text-align: right;  
+    font-size: 18px;
+
+}
+
+.header .nav-links li{
+    display: inline-flex;
+    padding: 0 20px;
+    
+}
+
+.header .nav-links li:hover{
+    transform: scale(1.1);
+}
+
+.header .nav-links a{
+    font-weight: 700%;
+    color: #eceff1;
+    text-decoration: none;
+    
+
+}
+
+.header .nav-links li a:hover{
+    color: #247e80;
+    text-decoration: underline;
+
+}
+/*SEPARADOR DE PAGUINA*/ 
+
+.wave{
+    bottom: 0;
+    width: 100%;
+}
+
+/*MAIN*/
+
+
+.greet{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    width: 100%;
+    height: 90vh;
+}
+
+.greeting{
+    width: 10vw;
+    display: flex;
+    justify-items: flex-end;
+    align-self: flex-start;
+}
+
+.about-me-text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    
+    
+    
+}
+
+.description{
+   display: flex;
+   justify-content: center;
+    color: #ffffff;
+    font-size: 30px;
+    margin-right: 70%;
+
+}
+
+.container-avatar{
+    padding-top: 10%;
+    width: 40%;
+    height: 96%;
+   
+}
+.avatar{
+    width: 100%;
+}
+
+/*pg 2 about me*/
+
+.container-about-me{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container-about-me .contact-text{
+    width: 48%;
+}
+
+.contact-text h2{
+    display: flex;
+    justify-content: center;
+margin-bottom: 15px;
+color: #237E7F;
+
+}
+
+.contact-text p{
+    color: #B1D9C5;
+    padding: 0px 0px 300px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.images-about-me{
+    width: 35%;
+
+}
+
+.titulo{
+    color: #B1D9C5;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/*GALERY*/
+
+.galery-proj{
+display: flex;
+justify-content: space-evenly;
+flex-wrap: wrap;
+
+}
+
+.img-proj{
+    width: 10%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgb(0, 0, 0, .5);
+
+}
+
+.img-proj > img{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galery{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    /*background: #237E7F, 0.7;*/
+    background: hsla(163, 91%, 27%, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.hover-galery img{
+    width: 30px;
+}
+
+.hover-galery p{
+color: #fff;
+}
+
+.img-proj:hover .hover-galery{
+    transform: scale(0);
+}
+
+/*FOOTER*/
+
+footer{
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: #B1D9C5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.logo{
+height: 50px; 
+cursor: pointer;
+}
+
+.icons-links, .footer-menu-container{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-wrap: wrap;
+ margin-bottom: 1rem;
+}
+
+.footer-menu-container{
+    list-style-type: none;
+    color: #247e80;
+    font-size: 18px;
+
+}
+
+.menu-item{
+margin: 1rem;
+cursor: pointer;
+opacity: 0.6;
+}
+
+.menu-item:hover{
+    opacity: 1;
+}
+
+.copyright{
+    color: #1b3039;
+    opacity: 0.3;
+    text-align: center;
+}
